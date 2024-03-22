@@ -39,10 +39,6 @@ window.onload = function() {
   console.log(generarExcusita());
 
   let excusita = document.querySelector("#excusita");
-
-  excusita.addEventListener("click", function() {
-    console.log("Se hizo clic en el párrafo.");
-    let novaExcusa = generarExcusita();
-    excusita.innerText = novaExcusa;
-  });
+  let novaExcusa = generarExcusita();
+  excusita.innerText = novaExcusa;
 };
